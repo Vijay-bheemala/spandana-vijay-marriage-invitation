@@ -1,0 +1,386 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation - Vijay & Spandana</title> <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* BG section with background image */
+.bg-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: url('https://vijay-bheemala.github.io/vijay-spandana-marriage-invitation/DSC04898.JPG') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Overlay for readability */
+.bg-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 0;
+}
+
+/* General Text */
+.bg-section p,
+.bg-section h1,
+.bg-section a.btn,
+.verse,
+.guests {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  margin: 5px 0;
+}
+
+/* Bible Verse */
+.Bible-verse .verse {
+  font-style: italic;
+  font-size: 1.05em;
+  color: #5a3e36;
+  line-height: 1.6;
+}
+
+.Bible-verse .verse span {
+  color: #2e8b57;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+/* Parents Names */
+.parents-names p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.parents-names .we-text {
+  font-family: 'Cursive', 'Brush Script MT', serif;
+  color: #4B0082;
+}
+
+.parents-names .names-highlight {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 5px 15px;
+  border: 2px solid gold;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* Cordially Text */
+.cordially p {
+  font-size: 1em;
+}
+
+/* Bride & Groom Highlight */
+.weds-line {
+  margin-top: 300px;
+}
+
+.groom,
+.bride {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 3px solid;
+  display: inline-block;
+  margin: 0 5px;
+  padding-top: 100px;
+}
+
+.groom {
+  color: #1e88e5;
+  border-color: #1e88e5;
+}
+
+.bride {
+  color: #e91e63;
+  border-color: #e91e63;
+}
+
+.heart-arrow {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0 10px;
+  position: relative;
+  color: #c2185b;
+}
+
+/* Bride Info */
+.bride-info {
+  text-align: center;
+  font-family: 'Cursive', 'Brush Script MT', serif;
+  font-size: 30px !important;
+  color: #4B0082 !important;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Solemnized */
+.Solemnized p {
+  font-size: 20px;
+}
+
+/* Calendar */
+.calendar-date {
+  margin-top: 20px;
+}
+
+.calendar-line {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.calendar-icon {
+  width: 55px;
+  height: 60px;
+  border: 2px solid #c2185b;
+  border-radius: 6px;
+  background: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calendar-icon .month {
+  background: #c2185b;
+  color: white;
+  font-size: 12px;
+  padding: 2px 0;
+}
+
+.calendar-icon .day {
+  font-size: 18px;
+  color: #c2185b;
+  line-height: 20px;
+}
+
+.calendar-icon .year {
+  font-size: 11px;
+  color: #555;
+  padding-bottom: 2px;
+}
+
+/* Guests Highlight */
+.guests {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* Lunch Text */
+.lunch p {
+  font-size: 1em;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 1em;
+  color: #fff;
+  background: #c2185b;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #9b1650;
+}
+
+/* QR Code */
+.qr-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.qr {
+  display: block;
+  margin: 20px auto 0 auto;
+  max-width: 160px;
+  height: auto;
+  image-rendering: pixelated;
+  filter: contrast(200%) brightness(80%);
+}
+
+/* Person Name */
+.person-name {
+  font-weight: bold;
+  font-size: 22px;
+  color: #2a4d9b;
+  margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 4vw;
+    line-height: 1.4;
+  }
+
+  .btn {
+    font-size: 4.5vw;
+    padding: 2vw 5vw;
+  }
+
+  .qr {
+    width: 60%;
+    max-width: 140px;
+  }
+
+  .groom,
+  .bride,
+  .heart-arrow {
+    font-size: 30px;
+    border-bottom-width: 2px;
+    padding-top: 40px;
+  }
+
+  .bride-info {
+    font-size: 22px !important;
+  }
+
+  .guests {
+    font-size: 4vw;
+  }
+
+  .calendar-line {
+    font-size: 4vw;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+  <div class="bg-section">
+
+    <!-- Bible Verse -->
+    <div class="Bible-verse">
+      <p class="verse">
+        Matthew 19:6<br>
+        <span>“So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate.”</span>
+      </p>
+    </div>
+
+    <!-- Invitation text -->
+    <div class="parents-names">
+      <p style="text-align: center; font-size: 1.2em;">
+        <span style="font-family: 'Cursive', 'Brush Script MT', serif; color: #4B0082;">We</span>
+        <span style="font-size: 1.5em; font-weight: bold; padding: 5px 15px; border: 2px solid gold; display: inline-block; margin-left: 5px;">
+          NAGARAJU & SUDHARANI
+        </span>
+      </p> 
+      <br>
+    </div>
+
+    <div class="cordially">
+      <p>cordially invite you to join us in celebrating the marriage of our son</p>
+    </div>
+
+    <!-- Groom & Bride -->
+    <div class="weds-line">
+      <p style="font-family: 'Great Vibes', cursive; font-size: 2em; text-align:center; margin:10px 0;">
+        <span class="groom">Vijay</span>
+        <span class="heart-arrow">Weds</span>
+        <span class="bride">Spandana</span>
+      </p>
+    </div>
+
+    <div class="bride-parents">
+      <p class="bride-info">"Loving daughter of Kedari Babu & Aparna"</p>
+    </div>
+
+    <div class="Solemnized">
+      <p>Solemnized by Rev Pastor: <br><span class="person-name">Deva Sahayam</span></p>
+    </div>
+
+    <!-- Event Details -->
+    <div class="calendar-date">
+      <p class="calendar-line">
+        <span class="calendar-icon">
+          <span class="month">OCT</span>
+          <span class="day">10</span>
+          <span class="year">2025</span>
+        </span>
+        Friday, 10th October 2025<br>
+        🕙 10:00 AM<br>
+        📍 Eternal Life Ministries, Jupudi
+      </p>
+    </div>
+
+    <div class="pastors">
+      <p>
+        Special blessings by:<br>
+        In loving memory of our Founder, Late Rev.Pastor <br><span class="person-name">Reuben Paul</span>,<br>
+        and his beloved wife, Rev. Pastor <br><span class="person-name">Raja Kumari Reuben</span>,<br>
+        who continues to lead the ministry.<br><br>
+        In the presence of our cherished guests:<br>
+        <span class="person-name">Madhuri</span>, <span class="person-name">Dave Reuben</span>, <span class="person-name">Mahen Reuben</span>
+      </p>
+    </div>
+
+    <div class="lunch">
+      <p>✨ Followed by Lunch ✨<br>We humbly request your prayers, blessings, and gracious presence.</p>
+    </div>
+
+    <!-- Button -->
+    <div class="view-location">
+      <a class="btn" href="https://maps.app.goo.gl/DSpiBzkcf1Er19zXA" target="_blank">📍 View Venue Location</a>
+    </div>
+
+    <!-- QR Code -->
+    <div class="qr-container">
+      <a href="https://maps.app.goo.gl/DSpiBzkcf1Er19zXA" target="_blank">
+        <img class="qr" src="Where the Magic Happens.png" alt="Scan QR for Venue">
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
